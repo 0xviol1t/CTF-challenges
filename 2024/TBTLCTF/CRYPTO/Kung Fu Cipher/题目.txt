@@ -1,0 +1,7 @@
+Stop trying to decrypt the flag and decrypt the flag!
+
+```
+nc 0.cloud.chals.io 30461
+```
+
+**[server.py](https://tbtl.ctfd.io/files/7058b4fd31da32a46da2fbc0c7a6279c/server.py?token=eyJ1c2VyX2lkIjoyMjIsInRlYW1faWQiOjE0MSwiZmlsZV9pZCI6NDB9.Zj859Q.Jh5dWA7jKbxLwtM8TWeEUQetpYY)**
