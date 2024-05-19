@@ -1,0 +1,9 @@
+https://en.wikipedia.org/w/index.php?title=Digital_signature&oldid=1113936031
+
+Alice signs a message—"Hello Bob!"—by appending to the original message a version encrypted with her private key. Bob receives both the message and signature. He uses Alice's public key to verify the authenticity of the message, i.e. that the encrypted copy, decrypted using the public key, exactly matches the original message.
+
+```
+nc 0.cloud.chals.io 31148#赛后应该没了
+```
+
+**[server.py](https://tbtl.ctfd.io/files/f6d4728f3a5f7748e3ef641b5eed4fcf/server.py?token=eyJ1c2VyX2lkIjoyMjIsInRlYW1faWQiOjE0MSwiZmlsZV9pZCI6NDR9.Zj85mw.frdzOje2BOQQVKt7LeibrcU1BfU)**

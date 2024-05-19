@@ -1,0 +1,7 @@
+My decryption function is cursed, and now I've lost my flag forever...
+
+```
+nc 0.cloud.chals.io 18312, Mirror: nc ctf.dev.tbtl.io 8002
+```
+
+**[server.py](https://tbtl.ctfd.io/files/c9bcf01704fba6caf082042c136f0139/server.py?token=eyJ1c2VyX2lkIjoyMjIsInRlYW1faWQiOjE0MSwiZmlsZV9pZCI6NDF9.Zj85Kw.z2c-d-y41JSeXEOAfDyaj8mnx7I)**
