@@ -1,0 +1,24 @@
+             Start                End Perm     Size Offset File
+    0x559b7fe46000     0x559b7fe47000 r--p     1000      0 /home/ctf/pwn
+    0x559b7fe47000     0x559b7fe48000 r-xp     1000   1000 /home/ctf/pwn
+    0x559b7fe48000     0x559b7fe49000 r--p     1000   2000 /home/ctf/pwn
+    0x559b7fe49000     0x559b7fe4a000 r--p     1000   2000 /home/ctf/pwn
+    0x559b7fe4a000     0x559b7fe4b000 rw-p     1000   3000 /home/ctf/pwn
+    0x559b80580000     0x559b805a1000 rw-p    21000      0 [heap]
+    0x7fc15b0bc000     0x7fc15b0fd000 rw-p    41000      0 [anon_7fc15b0bc]
+    0x7fc15b0fd000     0x7fc15b11f000 r--p    22000      0 /home/ctf/lib/x86_64-linux-gnu/libc-2.31.so
+    0x7fc15b11f000     0x7fc15b297000 r-xp   178000  22000 /home/ctf/lib/x86_64-linux-gnu/libc-2.31.so
+    0x7fc15b297000     0x7fc15b2e5000 r--p    4e000 19a000 /home/ctf/lib/x86_64-linux-gnu/libc-2.31.so
+    0x7fc15b2e5000     0x7fc15b2e9000 r--p     4000 1e7000 /home/ctf/lib/x86_64-linux-gnu/libc-2.31.so
+    0x7fc15b2e9000     0x7fc15b2eb000 rw-p     2000 1eb000 /home/ctf/lib/x86_64-linux-gnu/libc-2.31.so
+    0x7fc15b2eb000     0x7fc15b2f1000 rw-p     6000      0 [anon_7fc15b2eb]
+    0x7fc15b2f1000     0x7fc15b2f2000 r--p     1000      0 /home/ctf/lib/x86_64-linux-gnu/ld-2.31.so
+    0x7fc15b2f2000     0x7fc15b315000 r-xp    23000   1000 /home/ctf/lib/x86_64-linux-gnu/ld-2.31.so
+    0x7fc15b315000     0x7fc15b31d000 r--p     8000  24000 /home/ctf/lib/x86_64-linux-gnu/ld-2.31.so
+    0x7fc15b31e000     0x7fc15b31f000 r--p     1000  2c000 /home/ctf/lib/x86_64-linux-gnu/ld-2.31.so
+    0x7fc15b31f000     0x7fc15b320000 rw-p     1000  2d000 /home/ctf/lib/x86_64-linux-gnu/ld-2.31.so
+    0x7fc15b320000     0x7fc15b321000 rw-p     1000      0 [anon_7fc15b320]
+    0x7fff77c94000     0x7fff77cb5000 rw-p    21000      0 [stack]
+    0x7fff77cea000     0x7fff77cee000 r--p     4000      0 [vvar]
+    0x7fff77cee000     0x7fff77cf0000 r-xp     2000      0 [vdso]
+0xffffffffff600000 0xffffffffff601000 --xp     1000      0 [vsyscall]
