@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PyBlockly</title>
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>PyBlockly</h1>
+    <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+    <button id="saveButton">Send</button>
+
+    <xml id="toolbox" style="display: none">
+      <block type="text"></block>
+      <block type="math_number"></block>
+      <block type="math_arithmetic"></block>
+      <block type="print"></block>
+      <block type="max"></block>
+      <block type="min"></block>
+    </xml>
+
+    <script>
+      // Define custom 'print' block
+      Blockly.defineBlocksWithJsonArray([{
+        "type": "print",
+        "message0": "print %1",
+        "args0": [
+          {
+            "type": "input_value",
+            "name": "TEXT"
+          }
+        ],
+        "previousStatement": null,
+        "nextStatement": null,
+        "colour": 160,
+        "tooltip": "Prints a value",
+        "helpUrl": ""
+      }]);
+
+      // Define custom 'max' block
+      Blockly.defineBlocksWithJsonArray([{
+        "type": "max",
+        "message0": "max of %1 and %2",
+        "args0": [
+          {
+            "type": "input_value",
+            "name": "A"
+          },
+          {
+            "type": "input_value",
+            "name": "B"
+          }
+        ],
+        "output": "Number",
+        "colour": 230,
+        "tooltip": "Returns the maximum of two numbers",
+        "helpUrl": ""
+      }]);
+
+      // Define custom 'min' block
+      Blockly.defineBlocksWithJsonArray([{
+        "type": "min",
+        "message0": "min of %1 and %2",
+        "args0": [
+          {
+            "type": "input_value",
+            "name": "A"
+          },
+          {
+            "type": "input_value",
+            "name": "B"
+          }
+        ],
+        "output": "Number",
+        "colour": 230,
+        "tooltip": "Returns the minimum of two numbers",
+        "helpUrl": ""
+      }]);
+
+
+
+
+
+      // Initialize Blockly
+      var workspace = Blockly.inject('blocklyDiv', {
+        toolbox: document.getElementById('toolbox'),
+      });
+
+      // Handle the button click event
+      $('#saveButton').click(function() {
+        // Convert the Blockly workspace to JSON
+        var json = Blockly.serialization.workspaces.save(workspace);
+
+        // Send the JSON to the Flask backend
+        $.ajax({
+          type: 'POST',
+          url: '/blockly_json',
+          data: JSON.stringify(json),
+          contentType: 'application/json',
+          success: function(response) {
+            alert('JSON sent to backend and received response: ' + response);
+          },
+          error: function(error) {
+            alert('Error sending JSON to backend.');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

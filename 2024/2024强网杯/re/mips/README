@@ -1,0 +1,4 @@
+Someone has found the mips binary, along with an emulator to execute it. What can you find in them?
+
+# USAGE
+./emu ./mips_bin
